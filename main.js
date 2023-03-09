@@ -1,5 +1,10 @@
 // selecting thr word
 document.querySelector(".search").addEventListener("click", getWord)
+document.querySelector("input").addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    getWord();
+  }
+});
 
 function getWord() {
   let word = document.querySelector("input").value;
@@ -34,6 +39,8 @@ function getWord() {
       document.querySelector(".error-message").innerText = error;
     });
 }
+
+
 
 function empty(){
     document.querySelector(".examples").innerText = ''
