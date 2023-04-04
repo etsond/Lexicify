@@ -2,27 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dictionary</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <input placeholder="search word" />
-    <button class="search">Seach button</button>
-    <!-- word for the button -->
-    <h3>examples</h3>
-    <!-- for the paragraph -->
-    <p class="partOfSpeech">pos</p>
-    <p class="phonetic">//Sample</p>
-    <!-- definition -->
-    <p class="definition">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam
-    </p>
-    <p class="error-message"></p>
-
-    <!-- other words like this one -->
-    <p class="examples"></p>
+    <div class="container">
+      <div class="search-container">
+        <input class="search-input" placeholder="Search word" />
+        <button class="search-button">Search</button>
+      </div>
+      <div class="word-details-container">
+        <h3 class="word"></h3>
+        <div class="word-details">
+          <p class="part-of-speech"></p>
+          <p class="phonetic"></p>
+          <p class="definition"></p>
+          <p class="examples"></p>
+        </div>
+        <p class="error-message"></p>
+      </div>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
